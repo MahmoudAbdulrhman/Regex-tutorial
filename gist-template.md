@@ -49,7 +49,34 @@ World$ matches any string ending with `world`
 
 Quantifiers are characters within the regylar expression that specify how many instance a character,group,or character must represented in the input to be matched.
 
-### OR Operator
+Example of Quantitfers are as follows:
+
+* `*` - matches a string that has the anterior followed be zero or more of last character.
+* `+` - matches a string that has the anterior followed by one or more of last character.
+* `?` - Matches a string that has the anterior follwoed by zero or one of the last charcater.
+* `{}` - Matches a string that has the anterior followed by how ever many the number in the brackets of the last character in the string.
+* `()` - Matches a stribg that has any anterior characters followed by zweo or more copies of the string within the brackets.
+
+* Examples:
+
+```
+- xyz* matches a string that has followed by zero or more z
+### OR Operator.
+
+- x yz+ matches a string that has xy followed by one or more z.
+
+- xyz? matches a string that has xy followed by zero or one z.
+
+- xyz{2} matches a string that has xy followed by 2 or more z.
+
+- xyz{2,} matches a string that has xy followed by 2 or more z.
+
+- xyz{2,5} matches a string that xy followed by 2 up to 5 z,
+
+- x(yz)*  matches a string that has x followed by zero or more copiws of the sequence yz.
+
+x(yz)* matches a string that has x followed by 2 too 5 copies of the sequence.
+```
 
 ### Character Classes
 
