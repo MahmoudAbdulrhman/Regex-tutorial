@@ -31,7 +31,23 @@ Regular expression can also be used from the commend line and within text-eitors
 
 ### Anchors
 
+Anchors are characters within the regular expression that allow the user to match that begin with or ends with (or both) certain characters.
+
+Exanples of Anchors are as follows:
+
+* `^` - matches any string that start with the anterior word.
+* `$` -matches a string that end with preceding word before the character.
+* Exaples:
+
+```
+^winnig  matches any string with `winning`.
+World$ matches any string ending with `world`
+^Hello World$ matches exact string 
+```
+
 ### Quantifiers
+
+Quantifiers are characters within the regylar expression that specify how many instance a character,group,or character must represented in the input to be matched.
 
 ### OR Operator
 
