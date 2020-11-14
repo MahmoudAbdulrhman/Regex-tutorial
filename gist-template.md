@@ -40,9 +40,9 @@ Exanples of Anchors are as follows:
 * Exaples:
 
 ```
-^winnig  matches any string with `winning`.
-World$ matches any string ending with `world`
-^Hello World$ matches exact string 
+- ^winnig  matches any string - with `winning`.
+- World$ matches any string ending with `world`
+- ^Hello World$ matches exact string 
 ```
 
 ### Quantifiers
@@ -75,7 +75,7 @@ Example of Quantitfers are as follows:
 
 - x(yz)*  matches a string that has x followed by zero or more copiws of the sequence yz.
 
-x(yz)* matches a string that has x followed by 2 too 5 copies of the sequence.
+- x(yz)* matches a string that has x followed by 2 too 5 copies of the sequence.
 ```
 
 ### Character Classes
