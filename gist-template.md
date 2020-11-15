@@ -37,7 +37,8 @@ Exanples of Anchors are as follows:
 
 * `^` - matches any string that start with the anterior word.
 * `$` -matches a string that end with preceding word before the character.
-* Exaples:
+
+#### Exaples:
 
 ```
 - ^winnig  matches any string - with `winning`.
@@ -57,11 +58,10 @@ Example of Quantitfers are as follows:
 * `{}` - Matches a string that has the anterior followed by how ever many the number in the brackets of the last character in the string.
 * `()` - Matches a stribg that has any anterior characters followed by zweo or more copies of the string within the brackets.
 
-* Examples:
+#### Examples:
 
 ```
 - xyz* matches a string that has followed by zero or more z
-### OR Operator.
 
 - x yz+ matches a string that has xy followed by one or more z.
 
@@ -75,9 +75,24 @@ Example of Quantitfers are as follows:
 
 - x(yz)*  matches a string that has x followed by zero or more copiws of the sequence yz.
 
-- x(yz)* matches a string that has x followed by 2 too 5 copies of the sequence.
+- x(yz)* matches a string that has x followed by 2 too 5 copies of the sequence yz.
 ```
 
+### OR Operator
+
+OR Operators (Alternation Operator) matches on of a choice of regular expressions: if you put the character(s) representing the alternation operator between any two characters in the regular expression, the result matches the union of the strings that those two characters match.
+
+Examples of OR Operators are as follows:
+
+* `(|) - Match a string that has any anterior characters followed by the characters on the left or right of the vertical bar.
+
+* `[]` - Matches a string that has any characters without any characters within the brackets.
+
+#### Examples
+```
+- x(y|z) Matches a string that has x followed by y or z (and captures y or z).
+- x[yz] Matches a string that has x, but without capturing b or c.
+```
 ### Character Classes
 
 ### Flags
