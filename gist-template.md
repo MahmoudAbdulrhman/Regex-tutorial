@@ -38,7 +38,7 @@ Exanples of Anchors are as follows:
 * `^` - matches any string that start with the anterior word.
 * `$` -matches a string that end with preceding word before the character.
 
-#### Exaples:
+#### Examples:
 
 ```
 - ^winnig  matches any string - with `winning`.
@@ -94,6 +94,27 @@ Examples of OR Operators are as follows:
 - x[yz] Matches a string that has x, but without capturing b or c.
 ```
 ### Character Classes
+
+Character Classses(Character Set) tells the regex engine to match only one out Serveral specifiv character, such as digits, words, or whitespace.
+
+#### Examples of Character Classes are as follows:
+
+* `\d` - Matches a single character thea is a digit.
+* `\w` - Matches a word character (any alphanumeric character plus underscore).
+* `\s` - Matches a whitespace character (including tabs and line brakes).
+* `.` - Matches any character.
+* the capital casr for any Aformentioned characters will inverse the match.
+
+#### Examples:
+
+```
+- \d Matches a single any digit 0-9.
+- \w Matches a single any charcacter that is a-z.
+- . Matches any character.
+- \D Matches a single non-digit character.
+- \W Matches a single any non-character that is a-z
+- \s matches a single non-''.
+```
 
 ### Flags
 
