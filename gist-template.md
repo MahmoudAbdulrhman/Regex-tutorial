@@ -232,4 +232,7 @@ Look-ahead and Look-behind (lookaround) are `start and end` zero-length assertio
 ```
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+Mahmoud Abdulrhman is a Junior Developer 
+studying at UCB coding bootcamp
+
+[GitHub Profile](https://github.com/MahmoudAbdulrhman)
