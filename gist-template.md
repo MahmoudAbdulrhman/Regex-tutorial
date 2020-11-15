@@ -174,6 +174,17 @@ Bracket Expressions are characters enclosed by a bracket `[]` matching any singl
 ```
 ### Greedy and Lazy Match
 
+Greedy and/or Lazy Matching are quantifies that expand the match as far as possible through the text.
+
+#### Examples of Greedy and/or Lazy Matching are as follows:
+
+* `* + {}` - any one of these character can be used as a quanitifer for a Greedy or Lazy Match.
+
+#### Examples:
+```
+- <.+?> matches any character that is one or more times included inside `<` and `>`, and expands as needed.
+- <[^<>]+>  matches any character expects `<` or `>` one or more times included inside `<` and `>`.
+```
 ### Boundaries
 
 ### Back-references
