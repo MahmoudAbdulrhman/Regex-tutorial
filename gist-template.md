@@ -118,6 +118,21 @@ Character Classses(Character Set) tells the regex engine to match only one out S
 
 ### Flags
 
+Flags are optional parameters that we can add to plain expression to make it search in a different way. Each flag is denoted by a single alphabetic character, and serves different purposes in modifying the expression`s searching behavior.
+
+#### Examples of Flags are as follows:
+* `g` -Globlal, does not return after the first match,which restarted any subsequest searches from the end of the previous match (Make the expression search for all occurences).
+* `m` -Multi-line, when enabled  the Anchors (^$) will match the start and end of a line, rather than the whole string.
+* `i` Insensitive, makes the entire expression case-insensitve.
+
+#### Examoles:
+
+```
+- /Hello/g Matches all `Hello` in the test.
+- /Hello/m Matches the beginning and ending of each line woth `Hello`,rather than the whole string `Hello` itself.
+= /Hello/i Matches all `hello` despite casre (Hello,hEllo,heLlo,HellO,hello,HELLO all match).
+```
+
 ### Grouping and Capturing
 
 ### Bracket Expressions
