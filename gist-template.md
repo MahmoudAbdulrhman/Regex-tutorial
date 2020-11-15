@@ -125,7 +125,7 @@ Flags are optional parameters that we can add to plain expression to make it sea
 * `m` -Multi-line, when enabled  the Anchors (^$) will match the start and end of a line, rather than the whole string.
 * `i` Insensitive, makes the entire expression case-insensitve.
 
-#### Examoles:
+#### Examples:
 
 ```
 - /Hello/g Matches all `Hello` in the test.
@@ -134,6 +134,21 @@ Flags are optional parameters that we can add to plain expression to make it sea
 ```
 
 ### Grouping and Capturing
+
+Grouping unifies a pattern or string so that it is matched in a complete block
+
+#### Examples of Grouping are as follows:
+
+* `()` - parentheses creates a capture group.
+* `(?:)` - using `?:` disables the capturing group.
+* `(?<>)` - using `?<>` puts a name to the group
+
+#### Examples:
+```
+- x(yz) parentheses create a capturing group with value yz.
+- x(?:yz)* using ?: we disable the capturing group.
+- x(?<bar>yz) using ?<bar> we put a name to the group.
+```
 
 ### Bracket Expressions
 
